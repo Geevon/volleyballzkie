@@ -70,7 +70,7 @@ header {
 /* Adjustments for mobile view */
 @media (max-width: 768px) {
     header {
-        padding: 0.5rem 0; /* Slightly reduce padding on mobile */
+        padding: 1.5rem 0; /* Slightly reduce padding on mobile */
     }
 
     .header-wrap {
