@@ -1,0 +1,51 @@
+/* About */
+.about-content {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  gap: 20px; /* Add spacing between the image and text */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.about-image {
+  flex: 1; /* Allow the image to take up equal space */
+  text-align: center; /* Center the image if needed */
+}
+
+.about-image img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.about-text {
+  flex: 2; /* Allow the text to take up more space */
+}
+
+.image-placeholder {
+  height: 300px;
+  width: 500px; /* Set a width if using a placeholder box */
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center; /* Center align items */
+  }
+
+  .about-image, .about-text {
+      flex: unset; /* Remove flex sizing for mobile */
+      width: 100%; /* Make both image and text take full width */
+      text-align: center; /* Center text for mobile */
+  }
+
+  .image-placeholder {
+      height: auto; /* Adjust height for mobile */
+      width: 100%; /* Make placeholder responsive */
+  }
+}
